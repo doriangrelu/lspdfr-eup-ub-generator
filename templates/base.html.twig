@@ -9,6 +9,7 @@
 </head>
 <body>
 {{ include('_elements/_navbar.html.twig') }}
+<input type="hidden" id="directory-url-js" value="{{ path('api.directory') }}">
 <main class="container pt-4">
 
     {{ include('_elements/_flash.html.twig') }}

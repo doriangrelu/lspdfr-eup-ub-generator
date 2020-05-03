@@ -3,3 +3,13 @@
 @import "_theme/bootswatch";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
+code {
+  background: hsl(220, 80%, 90%);
+}
+
+pre {
+  white-space: pre-wrap;
+  background: hsl(30, 80%, 90%);
+  border: 1px solid $primary;
+  padding: 15px 15px;
+}

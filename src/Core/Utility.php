@@ -9,12 +9,12 @@ use Ramsey\Uuid\Uuid;
 class Utility
 {
 
-    public function uuid(bool $hash = true): string
+    public static function uuid(bool $hash = true): string
     {
-        return $this->hash(Uuid::uuid1());
+        return self::hash(Uuid::uuid1());
     }
 
-    public function hash(string $str): string
+    public static function hash(string $str): string
     {
         return hash('sha256', $str);
     }

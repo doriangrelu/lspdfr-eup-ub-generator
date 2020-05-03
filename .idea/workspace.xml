@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b564f595-dede-46e4-8c14-07b6d5854767" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/EUPController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EUPController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Utility.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Utility.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/EUPUBConfigType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/EUPUBConfigType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validator/FileIniValidator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validator/FileIniValidator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/_elements/_flash.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_elements/_flash.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Core/UBAdapterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Core/UBAdapterTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +148,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/_elements" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Storage" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
   </component>
@@ -166,11 +160,11 @@
       <recent name="D:\01-DORIAN\Programmation\Web\lspdfrgen" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\01-DORIAN\Programmation\Web\lspdfrgen\templates\_elements" />
+      <recent name="D:\01-DORIAN\Programmation\Web\lspdfrgen\Storage" />
       <recent name="D:\01-DORIAN\Programmation\Web\lspdfrgen\src\Core" />
-      <recent name="D:\01-DORIAN\Programmation\Web\lspdfrgen\src" />
-      <recent name="D:\01-DORIAN\Programmation\Web\lspdfrgen\Core" />
-      <recent name="D:\01-DORIAN\Programmation\Web\lspdfrgen\tests" />
+      <recent name="D:\01-DORIAN\Programmation\Web\lspdfrgen\src\Controller" />
+      <recent name="D:\01-DORIAN\Programmation\Web\lspdfrgen\assets\js" />
+      <recent name="D:\01-DORIAN\Programmation\Web\lspdfrgen\src\Core\IO" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.UBAdapterTest.testParseOk">
@@ -226,7 +220,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588497299699</updated>
-      <workItem from="1588497300853" duration="12553000" />
+      <workItem from="1588497300853" duration="17352000" />
     </task>
     <servers />
   </component>
@@ -250,14 +244,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="84" y="134" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040/-1366.261.1366.728@0.0.1920.1040" timestamp="1588503818186" />
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1588500053351">
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1588514310563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1366.261.1366.728@0.0.1920.1040" timestamp="1588500053351" />
-    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588503280505">
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1366.261.1366.728@0.0.1920.1040" timestamp="1588514310563" />
+    <state x="714" y="103" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588512643356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1366.261.1366.728@0.0.1920.1040" timestamp="1588503280505" />
+    <state x="714" y="103" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1366.261.1366.728@0.0.1920.1040" timestamp="1588512643356" />
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588514572243">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1366.261.1366.728@0.0.1920.1040" timestamp="1588514572243" />
     <state x="800" y="323" key="FileChooserDialogImpl" timestamp="1588507430215">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -294,10 +292,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1366.261.1366.728@0.0.1920.1040" timestamp="1588498616382" />
-    <state x="733" y="334" key="NewPhpClassDialog" timestamp="1588508718005">
+    <state x="733" y="334" key="NewPhpClassDialog" timestamp="1588512626689">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="733" y="334" key="NewPhpClassDialog/0.0.1920.1040/-1366.261.1366.728@0.0.1920.1040" timestamp="1588508718005" />
+    <state x="733" y="334" key="NewPhpClassDialog/0.0.1920.1040/-1366.261.1366.728@0.0.1920.1040" timestamp="1588512626689" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1588506252363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

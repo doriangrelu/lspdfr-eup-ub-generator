@@ -24,26 +24,27 @@ class FileIniValidator extends ConstraintValidator
         /* @var $constraint \App\Validator\FileIni */
 
         if (null === $value || '' === $value) {
-            return;
+            return false;
         }
 
         if ($value->isExecutable()) {
-            dd('exec');
             $this->context->buildViolation('Le fichier ne doit pas être executable')
                 ->addViolation();
+            return false;
         }
 
         if ($value->getClientOriginalExtension() !== 'ini' && $value->getClientOriginalExtension() !== 'txt') {
-            dd('ext');
-            $this->context->buildViolation('Veuillez fournir un fichier INI ou TXT')
+            $this->context->buildViolation("Le fichier doit avoir l'extension INI ou TXT")
                 ->addViolation();
+            return false;
         }
 
-        if (!in_array($value->getMimeType(), self::ALLOWED)) {
-            dd('mime');
-            $this->context->buildViolation('Veuillez fournir un fichier INI ou TXT')
-                ->addViolation();
-        }
+        /* if (!in_array($value->getMimeType(), self::ALLOWED)) {
+             $this->context->buildViolation('Veuillez fournir un fichier INI ou TXT')
+                 ->addViolation();
+             return false;
+         }*/
 
+        return true;
     }
 }

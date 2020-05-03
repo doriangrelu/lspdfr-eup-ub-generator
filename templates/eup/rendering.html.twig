@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {% if isProcessed %}
+        <h1>Rendu du traitement: </h1>
+        <hr>
+        <pre>
+        <code>
+            {{ xml }}
+        </code>
+       </pre>
+    {% else %}
+        <div class="text-center" id="loading-js" data-key="{{ key }}">
+            <h1>Traitement en cours...</h1>
+            <p>Cela peut prendre quelques minutes, merci de patienter.</p>
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    {% endif %}
+
+
+{% endblock %}
+
+{% block title %}
+    {{ parent() }} - EUP Traitement
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('eup') }}
+{% endblock %}
+

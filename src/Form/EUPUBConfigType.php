@@ -3,6 +3,7 @@
 namespace App\Form;
 
 use App\Validator\FileIni;
+use App\Validator\FileIniValidator;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -32,12 +33,8 @@ class EUPUBConfigType extends AbstractType
                     new File([
                         'maxSize' => '100M',
                         'maxSizeMessage' => 'Votre fichier ne doit pas dépasser les 100 méga.',
-                        /*'mimeTypes' => [
-                            'text/plain',
-                            'text/ini',
-                            'application/octet-stream',
-                        ],
-                        'mimeTypesMessage' => 'Veuillez fournir un fichier INI',*/
+                        'mimeTypes' => FileIniValidator::ALLOWED,
+                        'mimeTypesMessage' => 'Veuillez fournir un fichier INI',
                     ]),
                     new FileIni(),
                 ]
