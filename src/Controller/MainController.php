@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Form\EUPUBConfigType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -15,9 +16,20 @@ class MainController extends AbstractController
      */
     public function index()
     {
-        //parse_ini_file
         return $this->render('main/index.html.twig', [
-            'controller_name' => 'MainController',
+
         ]);
     }
+
+    /**
+     * @Route("/eup", name="eup", methods={"GET"})
+     */
+    public function eup()
+    {
+        $form = $this->createForm(EUPUBConfigType::class, null);
+        return $this->render('main/eup.html.twig', [
+            'form'=>$form->createView(),
+        ]);
+    }
+
 }

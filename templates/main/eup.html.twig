@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }} - EUP{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-12 col-sm-6">
+            <h1>Présentation</h1>
+            <hr>
+            <p>
+                EUP permets simplement d'ajouter différents packs d'uniformes à votre GTA. Il recquiert l'usage
+                d'OpenIV. Ensuite via le plugin EUP menu vous pouvez facilement changer la tenue de votre personnage
+                principal et même créer vos propres uniformes !
+            </p>
+            <p>
+                Ceci étant dit il est intéréssant de faire en sorte que l'IA lui aussi puisse bénéficier vos création.
+            </p>
+            <p class="font-weight-bold text-danger"><i class="fas fa-exclamation"></i> Attention il vous faudra avoir le
+                plugin Ultimate Backup de Benjoljo pour utiliser le gestionaire de configuration.
+            </p>
+
+        </div>
+        <div class="col-12 col-sm-6">
+            <h1>Gestionnaire de configuration</h1>
+            <hr>
+            <p class="text-info font-weight-bold">Veuillez uploader votre fichier <i> wardrobe.ini</i></p>
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            <hr>
+            <button class="btn btn-success btn-block">
+                <i class="fas fa-check"></i> Envoyer
+            </button>
+            {{ form_end(form) }}
+        </div>
+    </div>
+{% endblock %}
+
+

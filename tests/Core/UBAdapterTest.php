@@ -45,7 +45,7 @@ EOD;
         $actualDOM = new \DOMDocument();
         $actualDOM->loadXML($xml);
 
-        
+
         $actualXPath = new \DOMXPath($actualDOM);
         $actualPed = $actualXPath->evaluate('//Ped')[0] ?? null;
         if (is_null($actualPed)) {

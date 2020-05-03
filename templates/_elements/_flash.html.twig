@@ -1,0 +1,38 @@
+<div class="dismiss-alert-js">
+    {% for message in app.flashes('notice') %}
+        <div class="show alert alert-warning">
+            <i class="fas fa-exclamation-triangle"></i> &nbsp;
+            {{ message | raw }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endfor %}
+    {% for message in app.flashes('success') %}
+        <div class="fade show alert alert-success">
+            <i class="fas fa-check-circle"></i> &nbsp;
+            {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endfor %}
+    {% for message in app.flashes('error') %}
+        <div class="fade show alert alert-danger">
+            <i class="fas fa-times-circle"></i> &nbsp;
+            {{ message | raw }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endfor %}
+    {% for message in app.flashes('info') %}
+        <div class="fade show alert alert-info">
+            <i class="fas fa-info-circle"></i> &nbsp;
+            {{ message | raw }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endfor %}
+</div>
