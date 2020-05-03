@@ -7,6 +7,7 @@ use App\Core\IO\Uploader\FileUploader;
 use App\Form\EUPUBConfigType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
@@ -14,6 +15,13 @@ use Symfony\Component\Routing\Annotation\Route;
  */
 class EUPController extends AbstractBaseController
 {
+
+    public function __construct(bool $isActiveEup)
+    {
+        if ($isActiveEup === false) {
+            throw new NotFoundHttpException();
+        }
+    }
 
     /**
      * @Route("/{key}/ultimate-backup-rendering", name="rendering", methods={"GET"}, requirements={"key"= "[a-zA-Z0-9]+"})

@@ -11,7 +11,6 @@ export default class Request {
         for (let i in response) {
             let infos = response[i];
             if (routeName === infos.route) {
-                alert('ddd');
                 let requestInformations = this.createRequestInformations(infos, routeParameters, httpMethod, queryParams);
                 let fetchOptions = {method: requestInformations.method};
                 if (Object.keys(body).length > 0) {

@@ -23,14 +23,20 @@
         <div class="col-12 col-sm-6">
             <h1>Gestionnaire de configuration</h1>
             <hr>
-            <p class="text-info font-weight-bold">Veuillez uploader votre fichier <i> wardrobe.ini</i></p>
-            {{ form_start(form) }}
-            {{ form_widget(form) }}
-            <hr>
-            <button class="btn btn-success btn-block">
-                <i class="fas fa-check"></i> Envoyer
-            </button>
-            {{ form_end(form) }}
+            {% if form != null %}
+                <p class="text-info font-weight-bold">Veuillez uploader votre fichier <i> wardrobe.ini</i></p>
+                {{ form_start(form) }}
+                {{ form_widget(form) }}
+                <hr>
+                <button class="btn btn-success btn-block">
+                    <i class="fas fa-check"></i> Envoyer
+                </button>
+                {{ form_end(form) }}
+            {% else %}
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle"></i> Fonctionnalité désactivée temporairement.
+                </div>
+            {% endif %}
         </div>
     </div>
 {% endblock %}

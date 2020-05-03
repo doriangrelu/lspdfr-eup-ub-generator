@@ -49,6 +49,8 @@ class UBAdapter implements DocumentWritterInterface
     public function handleCreateXMLDocument(): void
     {
         $this->xmlDocument = new DOMDocument('1.0', 'UTF-8');
+        $this->xmlDocument->preserveWhiteSpace = false;
+        $this->xmlDocument->formatOutput = true;
     }
 
     /**

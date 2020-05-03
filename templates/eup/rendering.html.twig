@@ -5,11 +5,11 @@
     {% if isProcessed %}
         <h1>Rendu du traitement: </h1>
         <hr>
-        <pre>
-        <code>
-            {{ xml }}
+        <code class="prettyprint">
+
+                {{ xml }}
+
         </code>
-       </pre>
     {% else %}
         <div class="text-center" id="loading-js" data-key="{{ key }}">
             <h1>Traitement en cours...</h1>
@@ -29,5 +29,6 @@
 
 {% block javascripts %}
     {{ encore_entry_script_tags('eup') }}
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 {% endblock %}
 
